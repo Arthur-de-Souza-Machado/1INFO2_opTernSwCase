@@ -11,10 +11,14 @@
     */
 
     //Entrada
-
+    const carroPreco = Number(prompt(`Informe o preço do carro que deseja comprar`));
+    const carroParcela = Number(prompt(`Informe a quantidade de parcelas que deseja financiar`));
 
     //Processamento
-
+    (carroParcela == 1) ? alert(`O preço continua a ser o mesmo`)
+        : (carroParcela > 1 && carroParcela <= 12) ? alert(`O preço será de R$${carroPreco * 0.07 + carroPreco} `) 
+        : (carroParcela > 12) ? alert(`O preço será de R$${carroPreco * 0.14 + carroPreco}`)
+        : alert(`Caracter invalido`)
     
     //Saída
 

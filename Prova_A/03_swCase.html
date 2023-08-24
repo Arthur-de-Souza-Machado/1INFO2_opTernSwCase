@@ -12,10 +12,23 @@
     */
 
     //Entrada
-
+    const cafe = prompt(`Informe o tipo de café que deseja (CP)Capuccino, (EX)Expresso ou (GA)Galão`).toUpperCase()
     
     //Processamento
-
+    switch (cafe) {
+        case "CP":
+            alert(`Preço da Capuccino: R$ 9,00`);
+            break;
+        case "EX":
+            alert(`Preço do Expresso: R$ 6,00`);
+            break;
+        case "GA":
+            alert(`Preço do Galão: R$ 7,50`);
+            break;
+        default:
+            alert(`Opção de compra inválida`);
+            break;
+    }
     
     //Saída
 

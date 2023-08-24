@@ -13,11 +13,56 @@
     */
 
     //Entrada
-
-    
+    const combustível = prompt(`Informe qual combustivel vc vai querer - Gasolina (G): R$ 6,19- Etanol (E): R$ 5,29 - Diesel (D): R$ 5,09 - GNV (N): R$ 4,790`).toUpperCase();
+    const quantidade = Number(prompt(`Informe quanto que deseja abastecer`));
     //Processamento
+    if (combustível == "G") {
+        let gasolina = 6.19 * quantidade
+        if (gasolina > 150) {
+            let descGasolina = gasolina - gasolina * 0.1  
+            alert(`O valor final do abastecimento será de R$${descGasolina}`);
+        }
+        else if (gasolina < 150) {
+            alert(`O valor final do abastecimento será de R$${gasolina}`);
+        }
+    }
 
-    
+    else if (combustível == "E") {
+        let etanol = 5.29 * quantidade
+        if (etanol > 150) {
+            let descEtanol = etanol - etanol * 0.1
+            alert(`O valor final do abastecimento será de R$${descEtanol}`);
+        }
+        else if (etanol < 150) {
+            alert(`O valor final do abastecimento será de R$${etanol}`);
+        }
+    }
+
+    else if (combustível == "D") {
+        let diesel = 5.09 * quantidade
+        if (diesel > 150) {
+            let descDiesel = diesel - diesel * 0.1
+            alert(`O valor final do abastecimento será de R$${descDiesel}`);
+        }
+        else if (diesel < 150) {
+            alert(`O valor final do abastecimento será de R$${diesel}`);
+        }
+    }
+
+    else if (combustível == "N") {
+        let GNV = 5.09 * quantidade
+        if (GNV > 150) {
+            let descGNV = GNV- GNV * 0.1
+            alert(`O valor final do abastecimento será de R$${descGNV}`);
+        }
+        else if (GNV < 150) {
+            alert(`O valor final do abastecimento será de R$${GNV}`);
+        }
+    }
+
+    else{
+        alert(`Caracter invalido!`)
+    }
     //Saída
 
 

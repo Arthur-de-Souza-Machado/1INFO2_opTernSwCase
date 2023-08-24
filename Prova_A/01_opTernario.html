@@ -13,13 +13,14 @@
     */
 
     //Entrada
-
-    
+    const diasAtraso = Number(prompt(`Quantos dias de atraso estaos os livros`));
     //Processamento
-
+    (diasAtraso == 0) ? alert(`Nao haverá multa`)
+        : (diasAtraso <= 5) ? alert(`A multa sera de R$${diasAtraso * 1.50}`) 
+        : (diasAtraso > 5 && diasAtraso <= 10) ? alert(`A multa sera de R$${diasAtraso * 2}`)
+        : alert(`A multa sera de R$${diasAtraso * 2.50}`)
     
     //Saída
-
     
     /*
     Para testar:
